@@ -511,14 +511,14 @@ section {
         }
     }
     p {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     &::after {
         content: "";
         display: block;
-        width: 30%;
+        width: 50%;
         border-bottom: solid var(--color-primary) 1px;
-        margin: 0 auto;
+        
     }
 }
 
