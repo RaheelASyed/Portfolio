@@ -521,7 +521,7 @@ section {
 
 .certification {
     position: relative;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     h5 {
         padding: 1rem 0;
         text-transform: uppercase;
@@ -542,7 +542,6 @@ section {
         display: block;
         width: 50%;
         border-bottom: solid var(--color-primary) 1px;
-        
     }
 }
 
