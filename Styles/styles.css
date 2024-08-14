@@ -495,6 +495,30 @@ section {
     }
 }
 
+.certification-header {
+    display: flex;
+    align-items: center;
+}
+
+.certification-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: 20%;
+    width: 28px;
+    height: 28px;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    font-size: 1rem;
+    color: var(--color-white);
+
+    &:hover {
+        background-color: var(--color-black-75);
+    }
+}
+
 .certification {
     position: relative;
     padding-bottom: 1rem;
