@@ -148,10 +148,9 @@ section {
 .btns-container {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.linkedin-icon {
+.social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +158,7 @@ section {
     border-radius: 50%;
     width: 55px;
     height: 55px;
-    margin: 0 1rem;
+    margin-left: 1rem;
     cursor: pointer;
     transition: all .4s ease-in-out;
     font-size: 1.5rem;
@@ -562,6 +561,7 @@ section {
             width: 100%;
             height: 300px;
             object-fit: cover;
+            object-position: top;
             border-radius: 15px;
         }
 
@@ -624,7 +624,7 @@ section {
 }
 
 .portfolio-item:hover .hover-item {
-    opacity: 1;
+    opacity: 0.97;
     transform: scale(1);
 }
 
