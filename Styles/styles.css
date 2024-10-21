@@ -446,6 +446,11 @@ section {
         position: relative;
         padding-left: 3rem;
         border-left: 1px solid var(--color-black-75);
+        
+        .timeline-item-list li {
+            color: var(--color-black-10);
+            margin-bottom: 0.8rem;
+        }
 
         .timeline-icon {
             position: absolute;
