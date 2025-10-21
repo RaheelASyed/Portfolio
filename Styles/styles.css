@@ -375,42 +375,6 @@ section {
                         background-color: var(--color-primary);
                         transition: all .4s ease-in-out;
                     }
-
-                    .html {
-                        width: 90%;
-                    }
-
-                    .css {
-                        width: 90%;
-                    }
-
-                    .javascript {
-                        width: 70%;
-                    }
-
-                    .react {
-                        width: 70%;
-                    }
-
-                    .react-native {
-                        width: 70%;
-                    }
-
-                    .wordpress {
-                        width: 35%;
-                    }
-
-                    .figma {
-                        width: 90%;
-                    }
-
-                    .java {
-                        width: 85%;
-                    }
-
-                    .c {
-                        width: 30%;
-                    }
                 }
             }
         }
