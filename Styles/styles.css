@@ -335,7 +335,7 @@ section {
     }
 }
 
-.about-stats {
+/* .about-stats {
     padding-bottom: 4rem;
 
     .progress-bars {
@@ -379,6 +379,99 @@ section {
             }
         }
     }
+} */
+
+.about-stats { padding-bottom: 4rem; }
+
+/* Grid: [icon] [chart] */
+.skills-chart {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 0.75rem;
+}
+
+/* X-axis labels row aligns with the same grid as rows: 1 icon column + 3 equal sections */
+.skills-chart .x-labels {
+  display: grid;
+  grid-template-columns: 48px repeat(3, 1fr);
+  align-items: center;
+  font-size: 1rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+.skills-chart .x-labels .icon-spacer { height: 1px; } /* keeps columns aligned */
+.skills-chart .x-labels .x-label { text-align: left; }
+
+/* One skill row = icon + track */
+.skills-chart .skill-row {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 40px;
+}
+
+.skills-chart .skill-icon {
+  display: grid;
+  place-items: center;
+  color: var(--color-black-05);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Track with y-axis at the left and vertical grid lines at 33% & 66% */
+.skills-chart .bar-track {
+  position: relative;
+  height: 34px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Vertical guides for Beginner / Intermediate / Expert */
+.skills-chart .bar-track::before,
+.skills-chart .bar-track::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  opacity: 0.7;
+}
+.skills-chart .bar-track::before { left: 33.333%; }
+.skills-chart .bar-track::after  { left: 66.666%; }
+
+/* The bar itself */
+.skills-chart .bar {
+  --w: 0%;
+  width: var(--w);
+  height: 100%;
+  background: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 6px 0 0 6px;
+  white-space: nowrap;
+  transition: width .6s ease;
+}
+
+/* Label inside the bar */
+.skills-chart .bar > p {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: 0.95rem;
+}
+
+/* Responsive: stack icon above bar on tiny screens */
+@media (max-width: 520px) {
+  .skills-chart .x-labels { font-size: 0.75rem; }
+  .skills-chart .skill-row {
+    grid-template-columns: 28px 1fr;
+  }
+  .skills-chart .bar { padding-left: 8px; }
+  .skills-chart .bar > p { font-size: 0.9rem; }
 }
 
 .stat-title {
